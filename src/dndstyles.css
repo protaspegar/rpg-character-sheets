@@ -43,7 +43,7 @@
 }
 
 .d-and-d-character-sheet .d-and-d-box.white {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   padding: 10px;
 }
@@ -65,7 +65,7 @@
 
 .d-and-d-character-sheet .d-and-d-statbox {
   font-size: 7px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   font-weight: bold;
   border: 2px solid black;
   border-top-right-radius: 5px;
@@ -97,7 +97,7 @@
 }
 
 .d-and-d-character-sheet .d-and-d-statbox-value{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid black;
   border-radius: 50%;
   width: 60%;
@@ -122,7 +122,7 @@
 }
 .d-and-d-character-sheet .d-and-d-statrow .d-and-d-statrow-value {
   border: 3px solid black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 45px;
   display: inline-block;
   font-weight: bold;
@@ -208,7 +208,7 @@
   border-top-right-radius: 15px 50%;
   border-bottom-right-radius: 15px 50%;
   padding-bottom: 5px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .d-and-d-character-sheet .d-and-d-attribute-collection.gray {
   background-color: rgb(207, 207, 207);
@@ -319,7 +319,7 @@
 .d-and-d-character-sheet .d-and-d-currency .d-and-d-currency-label {
   margin-left: -10px;
   border: 2px solid black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50% 0 0 50%;
   width: 50px;
   z-index: 0;
@@ -334,7 +334,7 @@
 }
 .d-and-d-character-sheet .d-and-d-currency .d-and-d-currency-value {
   border: 2px solid black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 90px;
   height: 45px;
   border-top-left-radius: 15px 50%;
@@ -373,7 +373,7 @@
   height: 340px;
   border-radius: 50%;
   border: 3px solid black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   margin: -10px -15px;
   width: calc(100% + 30px);
 }
@@ -429,7 +429,7 @@
 .d-and-d-character-sheet .d-and-d-spelllist .d-and-d-spell-header .d-and-d-spell-level {
   position: absolute;
   border: 2px solid black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 30px;
   border-top-right-radius: 15px 50%;
   border-bottom-right-radius: 15px 50%;

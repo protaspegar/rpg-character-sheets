@@ -58,6 +58,18 @@ const App = (props: any) => {
     }
   }, [search]);
 
+  useEffect(() => {
+    if (character.backgroundImageUrl) {
+      document.body.style.backgroundImage = `url(${character.backgroundImageUrl})`
+      document.body.style.backgroundSize = 'cover'
+      document.body.style.backgroundPosition = 'center'
+      document.body.style.backgroundRepeat = 'no-repeat'
+      document.body.style.backgroundAttachment = 'fixed'
+    } else {
+      document.body.style.backgroundImage = ''
+    }
+  }, [character.backgroundImageUrl])
+
   const statsSheet = (
     <DnDCharacterStatsSheet
       character={character}
@@ -185,6 +197,12 @@ const App = (props: any) => {
                         <button className='btn btn-dark' onClick={() => exportCharacter()}>Export</button>
                         <input style={{display: 'none'}} type="file" id="selectFiles" accept="application/json" onChange={(e) => importCharacter(e)} />
                         <button className='btn btn-dark' onClick={() => document.getElementById("selectFiles")?.click()}>Import</button>
+                        <button className='btn btn-dark' onClick={() => {
+                          const url = window.prompt('Enter background image URL', character.backgroundImageUrl || '')
+                          if (url !== null) {
+                            updateCharacter({ ...character, backgroundImageUrl: url })
+                          }
+                        }}>Background</button>
                         <button className='btn btn-dark' onClick={() => window.print()}>Print</button>
                         <button className='btn btn-danger' onClick={() => clearCharacter()}>Clear</button>
                     </li>

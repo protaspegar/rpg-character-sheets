@@ -114,6 +114,8 @@ export default class DnDCharacter {
   appearance?: string
   backstory?: string
 
+  backgroundImageUrl?: string
+
   factionImg?: string
   factionRank?: string
   allies?: string
